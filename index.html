@@ -1,14 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2566">
-  <style type="text/css">
-  </style>
+  <meta charset="UTF-8">
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <svg width="800" height="600">
+    <image href="images/map.jpg" width="800" height="600" />
+    <rect x="100" y="100" width="200" height="100" fill="transparent" stroke="blue" stroke-width="2"
+      onmouseover="showZoom('wall1')"
+      onmouseout="hideZoom()" />
+  </svg>
+
+  <div id="zoomedView" style="display:none; position:absolute; top:20px; left:850px;">
+    <img id="zoomedImg" src="" width="400">
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
