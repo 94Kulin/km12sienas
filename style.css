@@ -1,3 +1,12 @@
-svg image {
-  pointer-events: none;
+#zoomedView {
+  display: none;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#zoomedView img {
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
