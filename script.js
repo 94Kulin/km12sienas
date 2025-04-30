@@ -1,8 +1,11 @@
-function showZoom(id) {
-  document.getElementById('zoomedImg').src = 'images/' + id + '.jpg';
-  document.getElementById('zoomedView').style.display = 'block';
+function showZoom(imageName) {
+  const zoomedView = document.getElementById('zoomedView');
+  const zoomedImg = document.getElementById('zoomedImg');
+  zoomedImg.src = `images/${imageName}.jpeg`;
+  zoomedView.style.display = 'block';
 }
 
 function hideZoom() {
-  document.getElementById('zoomedView').style.display = 'none';
+  const zoomedView = document.getElementById('zoomedView');
+  zoomedView.style.display = 'none';
 }
